@@ -10,6 +10,10 @@ On top of those I have added desktop short cuts to launch OpenAuto and to dim an
 
 # Future features
 
+### Bluetooth
+
+Currently there is a problem with raspbian playing audio over bluetooth. the speaker pairs and connects. pulse recognizes it as an audio device and plays to it but no audio comes from the speaker.
+
 ### Backup camera
 
   To add a backup camera to the system it would consist of a cheap NTSC camera that the pi switched to when it seas the reverse rights come one. it would watch a GPIO pin and wait for it to go high and then run the command to open the feed from a USB capture card.
