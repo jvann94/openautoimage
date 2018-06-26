@@ -12,7 +12,7 @@ On top of those I have added desktop short cuts to launch OpenAuto and to dim an
 
 ### Bluetooth
 
-Currently there is a problem with raspbian playing audio over bluetooth. the speaker pairs and connects. pulse recognizes it as an audio device and plays to it but no audio comes from the speaker.
+Currently expiriencing a problem with raspbian playing audio over bluetooth. the speaker pairs and connects. pulse recognizes it as an audio device and plays to it but no audio comes from the speaker.
 
 ### Backup camera
 
