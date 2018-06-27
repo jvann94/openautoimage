@@ -1,0 +1,412 @@
+Module #0
+	Name: module-device-restore
+	Argument: 
+	Usage counter: n/a
+	Properties:
+		module.author = "Lennart Poettering"
+		module.description = "Automatically restore the volume/mute state of devices"
+		module.version = "10.0"
+
+Module #1
+	Name: module-stream-restore
+	Argument: 
+	Usage counter: n/a
+	Properties:
+		module.author = "Lennart Poettering"
+		module.description = "Automatically restore the volume/mute/device state of streams"
+		module.version = "10.0"
+
+Module #2
+	Name: module-card-restore
+	Argument: 
+	Usage counter: n/a
+	Properties:
+		module.author = "Lennart Poettering"
+		module.description = "Automatically restore profile of cards"
+		module.version = "10.0"
+
+Module #3
+	Name: module-augment-properties
+	Argument: 
+	Usage counter: n/a
+	Properties:
+		module.author = "Lennart Poettering"
+		module.description = "Augment the property sets of streams with additional static information"
+		module.version = "10.0"
+
+Module #4
+	Name: module-switch-on-port-available
+	Argument: 
+	Usage counter: n/a
+	Properties:
+		
+
+Module #5
+	Name: module-udev-detect
+	Argument: 
+	Usage counter: n/a
+	Properties:
+		module.author = "Lennart Poettering"
+		module.description = "Detect available audio hardware and load matching drivers"
+		module.version = "10.0"
+
+Module #6
+	Name: module-alsa-card
+	Argument: device_id="1" name="usb-C-Media_Electronics_Inc._USB_PnP_Sound_Device-00" card_name="alsa_card.usb-C-Media_Electronics_Inc._USB_PnP_Sound_Device-00" namereg_fail=false tsched=yes fixed_latency_range=no ignore_dB=no deferred_volume=yes use_ucm=yes card_properties="module-udev-detect.discovered=1"
+	Usage counter: 0
+	Properties:
+		module.author = "Lennart Poettering"
+		module.description = "ALSA Card"
+		module.version = "10.0"
+
+Module #7
+	Name: module-alsa-card
+	Argument: device_id="0" name="platform-soc_audio" card_name="alsa_card.platform-soc_audio" namereg_fail=false tsched=yes fixed_latency_range=no ignore_dB=no deferred_volume=yes use_ucm=yes card_properties="module-udev-detect.discovered=1"
+	Usage counter: 0
+	Properties:
+		module.author = "Lennart Poettering"
+		module.description = "ALSA Card"
+		module.version = "10.0"
+
+Module #8
+	Name: module-native-protocol-unix
+	Argument: 
+	Usage counter: n/a
+	Properties:
+		module.author = "Lennart Poettering"
+		module.description = "Native protocol (UNIX sockets)"
+		module.version = "10.0"
+
+Module #9
+	Name: module-default-device-restore
+	Argument: 
+	Usage counter: n/a
+	Properties:
+		module.author = "Lennart Poettering"
+		module.description = "Automatically restore the default sink and source"
+		module.version = "10.0"
+
+Module #10
+	Name: module-rescue-streams
+	Argument: 
+	Usage counter: n/a
+	Properties:
+		module.author = "Lennart Poettering"
+		module.description = "When a sink/source is removed, try to move its streams to the default sink/source"
+		module.version = "10.0"
+
+Module #11
+	Name: module-always-sink
+	Argument: 
+	Usage counter: n/a
+	Properties:
+		module.author = "Colin Guthrie"
+		module.description = "Always keeps at least one sink loaded even if it's a null one"
+		module.version = "10.0"
+
+Module #12
+	Name: module-intended-roles
+	Argument: 
+	Usage counter: n/a
+	Properties:
+		module.author = "Lennart Poettering"
+		module.description = "Automatically set device of streams based on intended roles of devices"
+		module.version = "10.0"
+
+Module #13
+	Name: module-suspend-on-idle
+	Argument: 
+	Usage counter: n/a
+	Properties:
+		module.author = "Lennart Poettering"
+		module.description = "When a sink/source is idle for too long, suspend it"
+		module.version = "10.0"
+
+Module #14
+	Name: module-console-kit
+	Argument: 
+	Usage counter: n/a
+	Properties:
+		module.author = "Lennart Poettering"
+		module.description = "Create a client for each ConsoleKit session of this user"
+		module.version = "10.0"
+
+Module #15
+	Name: module-systemd-login
+	Argument: 
+	Usage counter: n/a
+	Properties:
+		module.author = "Lennart Poettering"
+		module.description = "Create a client for each login session of this user"
+		module.version = "10.0"
+
+Module #16
+	Name: module-position-event-sounds
+	Argument: 
+	Usage counter: n/a
+	Properties:
+		module.author = "Lennart Poettering"
+		module.description = "Position event sounds between L and R depending on the position on screen of the widget triggering them."
+		module.version = "10.0"
+
+Module #17
+	Name: module-role-cork
+	Argument: 
+	Usage counter: n/a
+	Properties:
+		module.author = "Lennart Poettering"
+		module.description = "Mute & cork streams with certain roles while others exist"
+		module.version = "10.0"
+
+Module #18
+	Name: module-filter-heuristics
+	Argument: 
+	Usage counter: n/a
+	Properties:
+		module.author = "Colin Guthrie"
+		module.description = "Detect when various filters are desirable"
+		module.version = "10.0"
+
+Module #19
+	Name: module-filter-apply
+	Argument: 
+	Usage counter: n/a
+	Properties:
+		module.author = "Colin Guthrie"
+		module.description = "Load filter sinks automatically when needed"
+		module.version = "10.0"
+
+Module #20
+	Name: module-x11-publish
+	Argument: display=:0
+	Usage counter: n/a
+	Properties:
+		module.author = "Lennart Poettering"
+		module.description = "X11 credential publisher"
+		module.version = "10.0"
+
+Module #21
+	Name: module-x11-cork-request
+	Argument: display=:0
+	Usage counter: n/a
+	Properties:
+		module.author = "Lennart Poettering"
+		module.description = "Synthesize X11 media key events when cork/uncork is requested"
+		module.version = "10.0"
+
+Sink #0
+	State: SUSPENDED
+	Name: alsa_output.platform-soc_audio.analog-stereo
+	Description: bcm2835 ALSA Analog Stereo
+	Driver: module-alsa-card.c
+	Sample Specification: s16le 2ch 44100Hz
+	Channel Map: front-left,front-right
+	Owner Module: 7
+	Mute: no
+	Volume: front-left: 65511 / 100% / -0.01 dB,   front-right: 65511 / 100% / -0.01 dB
+	        balance 0.00
+	Base Volume: 56210 /  86% / -4.00 dB
+	Monitor Source: alsa_output.platform-soc_audio.analog-stereo.monitor
+	Latency: 0 usec, configured 0 usec
+	Flags: HARDWARE HW_MUTE_CTRL HW_VOLUME_CTRL DECIBEL_VOLUME LATENCY 
+	Properties:
+		alsa.resolution_bits = "16"
+		device.api = "alsa"
+		device.class = "sound"
+		alsa.class = "generic"
+		alsa.subclass = "generic-mix"
+		alsa.name = "bcm2835 ALSA"
+		alsa.id = "bcm2835 ALSA"
+		alsa.subdevice = "0"
+		alsa.subdevice_name = "subdevice #0"
+		alsa.device = "0"
+		alsa.card = "0"
+		alsa.card_name = "bcm2835 ALSA"
+		alsa.long_card_name = "bcm2835 ALSA"
+		device.bus_path = "platform-soc:audio"
+		sysfs.path = "/devices/platform/soc/soc:audio/bcm2835_alsa/sound/card0"
+		device.string = "hw:0"
+		device.buffering.buffer_size = "131072"
+		device.buffering.fragment_size = "131072"
+		device.access_mode = "mmap+timer"
+		device.profile.name = "analog-stereo"
+		device.profile.description = "Analog Stereo"
+		device.description = "bcm2835 ALSA Analog Stereo"
+		alsa.mixer_name = "Broadcom Mixer"
+		module-udev-detect.discovered = "1"
+		device.icon_name = "audio-card"
+	Ports:
+		analog-output: Analog Output (priority: 9900)
+	Active Port: analog-output
+	Formats:
+		pcm
+
+Source #0
+	State: SUSPENDED
+	Name: alsa_input.usb-C-Media_Electronics_Inc._USB_PnP_Sound_Device-00.analog-mono
+	Description: USB PnP Sound Device Analog Mono
+	Driver: module-alsa-card.c
+	Sample Specification: s16le 1ch 44100Hz
+	Channel Map: mono
+	Owner Module: 6
+	Mute: no
+	Volume: mono: 65536 / 100% / 0.00 dB
+	        balance 0.00
+	Base Volume: 26281 /  40% / -23.81 dB
+	Monitor of Sink: n/a
+	Latency: 0 usec, configured 0 usec
+	Flags: HARDWARE HW_MUTE_CTRL HW_VOLUME_CTRL DECIBEL_VOLUME LATENCY 
+	Properties:
+		alsa.resolution_bits = "16"
+		device.api = "alsa"
+		device.class = "sound"
+		alsa.class = "generic"
+		alsa.subclass = "generic-mix"
+		alsa.name = "USB Audio"
+		alsa.id = "USB Audio"
+		alsa.subdevice = "0"
+		alsa.subdevice_name = "subdevice #0"
+		alsa.device = "0"
+		alsa.card = "1"
+		alsa.card_name = "USB PnP Sound Device"
+		alsa.long_card_name = "C-Media Electronics Inc. USB PnP Sound Device at usb-3f980000.usb-1.2, full spe"
+		alsa.driver_name = "snd_usb_audio"
+		device.bus_path = "platform-3f980000.usb-usb-0:1.2:1.0"
+		sysfs.path = "/devices/platform/soc/3f980000.usb/usb1/1-1/1-1.2/1-1.2:1.0/sound/card1"
+		udev.id = "usb-C-Media_Electronics_Inc._USB_PnP_Sound_Device-00"
+		device.bus = "usb"
+		device.vendor.id = "8086"
+		device.vendor.name = "Intel Corp."
+		device.product.id = "0808"
+		device.product.name = "USB PnP Sound Device"
+		device.serial = "C-Media_Electronics_Inc._USB_PnP_Sound_Device"
+		device.string = "hw:1"
+		device.buffering.buffer_size = "176400"
+		device.buffering.fragment_size = "88200"
+		device.access_mode = "mmap+timer"
+		device.profile.name = "analog-mono"
+		device.profile.description = "Analog Mono"
+		device.description = "USB PnP Sound Device Analog Mono"
+		alsa.mixer_name = "USB Mixer"
+		alsa.components = "USB8086:0808"
+		module-udev-detect.discovered = "1"
+		device.icon_name = "audio-card-usb"
+	Ports:
+		analog-input-mic: Microphone (priority: 8700)
+	Active Port: analog-input-mic
+	Formats:
+		pcm
+
+Source #1
+	State: SUSPENDED
+	Name: alsa_output.platform-soc_audio.analog-stereo.monitor
+	Description: Monitor of bcm2835 ALSA Analog Stereo
+	Driver: module-alsa-card.c
+	Sample Specification: s16le 2ch 44100Hz
+	Channel Map: front-left,front-right
+	Owner Module: 7
+	Mute: no
+	Volume: front-left: 65536 / 100% / 0.00 dB,   front-right: 65536 / 100% / 0.00 dB
+	        balance 0.00
+	Base Volume: 65536 / 100% / 0.00 dB
+	Monitor of Sink: alsa_output.platform-soc_audio.analog-stereo
+	Latency: 0 usec, configured 0 usec
+	Flags: DECIBEL_VOLUME LATENCY 
+	Properties:
+		device.description = "Monitor of bcm2835 ALSA Analog Stereo"
+		device.class = "monitor"
+		alsa.card = "0"
+		alsa.card_name = "bcm2835 ALSA"
+		alsa.long_card_name = "bcm2835 ALSA"
+		device.bus_path = "platform-soc:audio"
+		sysfs.path = "/devices/platform/soc/soc:audio/bcm2835_alsa/sound/card0"
+		device.string = "0"
+		module-udev-detect.discovered = "1"
+		device.icon_name = "audio-card"
+	Formats:
+		pcm
+
+Client #0
+	Driver: module-systemd-login.c
+	Owner Module: 15
+	Properties:
+		application.name = "Login Session c2"
+		systemd-login.session = "c2"
+
+Client #1
+	Driver: module-systemd-login.c
+	Owner Module: 15
+	Properties:
+		application.name = "Login Session c1"
+		systemd-login.session = "c1"
+
+Client #9
+	Driver: protocol-native.c
+	Owner Module: 8
+	Properties:
+		application.name = "pactl"
+		native-protocol.peer = "UNIX socket client"
+		native-protocol.version = "32"
+		application.process.id = "1057"
+		application.process.user = "pi"
+		application.process.host = "raspberrypi"
+		application.process.binary = "pactl"
+		application.language = "en_GB.UTF-8"
+		window.x11.display = ":0.0"
+		application.process.machine_id = "e9e0e04672f74b80848049fc00394f7d"
+		application.process.session_id = "c1"
+
+Card #0
+	Name: alsa_card.usb-C-Media_Electronics_Inc._USB_PnP_Sound_Device-00
+	Driver: module-alsa-card.c
+	Owner Module: 6
+	Properties:
+		alsa.card = "1"
+		alsa.card_name = "USB PnP Sound Device"
+		alsa.long_card_name = "C-Media Electronics Inc. USB PnP Sound Device at usb-3f980000.usb-1.2, full spe"
+		alsa.driver_name = "snd_usb_audio"
+		device.bus_path = "platform-3f980000.usb-usb-0:1.2:1.0"
+		sysfs.path = "/devices/platform/soc/3f980000.usb/usb1/1-1/1-1.2/1-1.2:1.0/sound/card1"
+		udev.id = "usb-C-Media_Electronics_Inc._USB_PnP_Sound_Device-00"
+		device.bus = "usb"
+		device.vendor.id = "8086"
+		device.vendor.name = "Intel Corp."
+		device.product.id = "0808"
+		device.product.name = "USB PnP Sound Device"
+		device.serial = "C-Media_Electronics_Inc._USB_PnP_Sound_Device"
+		device.string = "1"
+		device.description = "USB PnP Sound Device"
+		module-udev-detect.discovered = "1"
+		device.icon_name = "audio-card-usb"
+	Profiles:
+		input:analog-mono: Analog Mono Input (sinks: 0, sources: 1, priority: 2, available: yes)
+		off: Off (sinks: 0, sources: 0, priority: 0, available: yes)
+	Active Profile: input:analog-mono
+	Ports:
+		analog-input-mic: Microphone (priority: 8700, latency offset: 0 usec)
+			Properties:
+				device.icon_name = "audio-input-microphone"
+			Part of profile(s): input:analog-mono
+
+Card #1
+	Name: alsa_card.platform-soc_audio
+	Driver: module-alsa-card.c
+	Owner Module: 7
+	Properties:
+		alsa.card = "0"
+		alsa.card_name = "bcm2835 ALSA"
+		alsa.long_card_name = "bcm2835 ALSA"
+		device.bus_path = "platform-soc:audio"
+		sysfs.path = "/devices/platform/soc/soc:audio/bcm2835_alsa/sound/card0"
+		device.string = "0"
+		device.description = "bcm2835 ALSA"
+		module-udev-detect.discovered = "1"
+		device.icon_name = "audio-card"
+	Profiles:
+		output:analog-mono: Analog Mono Output (sinks: 1, sources: 0, priority: 200, available: yes)
+		output:analog-stereo: Analog Stereo Output (sinks: 1, sources: 0, priority: 6000, available: yes)
+		off: Off (sinks: 0, sources: 0, priority: 0, available: yes)
+	Active Profile: output:analog-stereo
+	Ports:
+		analog-output: Analog Output (priority: 9900, latency offset: 0 usec)
+			Part of profile(s): output:analog-mono, output:analog-stereo
