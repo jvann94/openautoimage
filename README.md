@@ -22,7 +22,7 @@ Currently expiriencing a problem with raspbian playing audio over bluetooth. the
  
 ### OBDII support
 
-I need to figure out how to make my cheap ELM 327 bluetooth OBDII reader talk to the scantool software and it was making me pull my hair out a little bit.
+I need to figure out how to make my cheap ELM 327 bluetooth OBDII reader talk to the scantool software. scantool no longer supports chinese knockoff readers and will force close when it sees youre using one of these. A work around is needed.
 
 ### Buttons
 
